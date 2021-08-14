@@ -4,7 +4,7 @@ import os
 
 
 """
-current version: only for UBUNTU terminals
+Current version: Only for UBUNTU terminals
 
 """
 
