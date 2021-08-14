@@ -34,9 +34,12 @@ def incomming_command():
     
     elif body == 'init 0':
         resp.message('Shutting down your machine...')
-        
         os.system('init 0')
- 
+    
+    elif body != 'maen':
+        os.system(body)
+        
+        
          
     return str(resp)
 
