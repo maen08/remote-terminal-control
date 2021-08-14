@@ -40,7 +40,6 @@ def incomming_command():
          
     return str(resp)
 
-
     """
     Run the script on port 5000
     """
