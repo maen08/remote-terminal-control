@@ -1,5 +1,6 @@
 from flask import Flask, request, redirect
 from twilio.twiml.messaging_response import MessagingResponse
+import os
 
 
 """
@@ -28,14 +29,14 @@ def incomming_command():
     resp = MessagingResponse()
 
     # Determine the right reply for this message
-    if body == 'hello':
+    if body == 'maen':
         resp.message('What command do you want to run on your machine?')
     
     elif body == 'init 0':
         resp.message('Shutting down your machine...')
+        
+        os.system('init 0')
  
-                     
-   
          
     return str(resp)
 
