@@ -1,26 +1,12 @@
 # remote-terminal-control
 
-#### Send terminal commands to your machine (computer) from your WhatsApp number 
+#### Send Linux commands to a remote PC(or server) from WhatsApp
+You can learn from this project, going further and build something tremendous! From the concept of this project (of-course you need to improve and add few other things) you can:
 
-## Uses:
+- Deploy your docker replicas just by sending WhatsApp text
+- You can monitor your IoT devices remotely
+- Send commands to your K8's engine for some orchestration processes
 
-- Clone the project and navigate to the root directory:
-
-```sh
-git clone https://github.com/maen08/remote-terminal-control.git
-
-cd remote-terminal-control
-
-```
-
-- Run the container
-
-```sh
-docker build -t  remote-terminal-control
-
-docker run -p 5000:5000 remote-terminal-control
-```
-
-## Note:
-- Keep the container running always!
-- A script/commands wont run if the container is down
+In fact you can do alot, the sky is not a limit :) Let's setup our project.
+ 
+Follow along this blog which serves as a [readme]()
