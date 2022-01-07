@@ -5,7 +5,6 @@ import os
 
 """
 Current version: Only for UBUNTU terminals
-
 """
 
 
@@ -13,10 +12,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return 'hello world'
+    # Just to make sure if flask server runs successfully
+    return 'Hello, the server is running...'
+
+
 
 @app.route("/command", methods=['GET', 'POST'])
-def incomming_command():
+def command():
 
     """
         Send a dynamic reply to an incoming text message
@@ -29,24 +31,21 @@ def incomming_command():
     resp = MessagingResponse()
 
     # Determine the right reply for this message
-    if body == 'maen':
+    if body == 'command':
         resp.message('What command do you want to run on your machine?')
-    
+
+    # You can send any command
     elif body == 'init 0':
         resp.message('Shutting down your machine...')
         os.system('init 0')
-    
-    elif body != 'maen':
+
+    elif body != 'command':
         os.system(body)
-        
-        
-         
+  
     return str(resp)
 
-    """
-    Run the script on port 5000
-    """
-
+ 
 if __name__ == "__main__":
+    # Run the script on port 5000
     app.run(debug=True, host='0.0.0.0', port='5000')
  
