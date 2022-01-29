@@ -1,6 +1,6 @@
 # remote-terminal-control
 
-#### Send Linux commands to a remote PC(or server) from WhatsApp
+#### Send Linux commands to a remote PC(or server) from WhatsApp with Twilio
 You can learn from this project, going further and build something tremendous! From the concept of this project (of-course you need to improve and add few other things) you can:
 
 - Deploy your docker replicas just by sending WhatsApp text
