@@ -9,4 +9,4 @@ You can learn from this project, going further and build something tremendous! F
 
 In fact you can do alot, the sky is not a limit :) Let's setup our project.
  
-Follow along this blog which serves as a [readme]()
+Follow along this blog which serves as a [readme](https://maenblog.tech/send-linux-commands-to-a-remote-pcor-server-from-whatsapp)
